@@ -238,7 +238,8 @@
 }
 
 .card__text-picture {
-  padding: 96px 40px 48px 40px;
+  margin: 96px 40px 48px 40px;
+  padding-bottom: 48px;
 }
 
 .lots__look-more-link {

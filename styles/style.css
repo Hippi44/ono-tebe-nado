@@ -45,9 +45,6 @@
   white-space: nowrap;
 }
 
-.header__logo_image {
-}
-
 .address {
   font-size: 18px;
   align-self: center;
@@ -355,9 +352,6 @@
 
 .footer__menu-link_active {
   text-decoration: none;
-}
-
-.footer__menu-list {
 }
 
 .footer__menu-list-item {

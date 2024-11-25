@@ -276,6 +276,7 @@
 
 .about {
   padding: 0 23px 0 25px;
+  margin-bottom: 179px;
 }
 
 .about__column {
@@ -335,7 +336,7 @@
 .footer {
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
-  margin-top: 179px;
+  margin-bottom: 88px;
 }
 
 .footer__address {

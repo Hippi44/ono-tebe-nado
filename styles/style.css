@@ -85,7 +85,7 @@
   display: grid;
   z-index: 1;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.55fr 1.15fr 1.6fr;
+  grid-template-rows: 1.35fr 1.19fr 1fr;
   color: #fff;
   letter-spacing: 1.3em;
 }
@@ -110,7 +110,6 @@
 
 .aligned-text_right {
   text-align: right;
-  align-content: center;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 100px;
@@ -119,7 +118,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.59em;
+  letter-spacing: 0.586em;
 }
 
 .no-letter-spacing {
@@ -138,7 +137,7 @@
   line-height: 28px;
   align-items: center;
   color: #fff;
-  padding: 117px 27px 50px 26px;
+  padding: 136px 27px 50px 26px;
   text-align: left;
   gap: 79px;
 }

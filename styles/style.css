@@ -278,7 +278,6 @@
 
 .about {
   padding: 0 23px 0 25px;
-  margin-bottom: 179px;
 }
 
 .about__column {
@@ -328,7 +327,7 @@
 }
 
 .about__text-indent {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 /* Конец третей секции */
@@ -339,6 +338,7 @@
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
   margin-bottom: 88px;
+  margin-top: 205px;
 }
 
 .footer__address {

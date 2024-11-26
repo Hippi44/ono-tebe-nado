@@ -329,7 +329,7 @@
 }
 
 .about__text-indent {
-  /* padding-bottom: 25px; */
+  padding-bottom: 25px;
 }
 
 /* Конец третей секции */
@@ -339,8 +339,8 @@
 .footer {
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
-  margin-bottom: 120px;
-  margin-top: 180px;
+  margin-bottom: 88px;
+  margin-top: 179px;
 }
 
 .footer__address {

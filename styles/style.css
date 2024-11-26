@@ -194,6 +194,8 @@
 
 .lots__card-list-item {
   flex-direction: column;
+  max-width: 334px;
+  min-height: 563px;
 }
 
 .card {

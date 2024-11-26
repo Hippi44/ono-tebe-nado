@@ -196,6 +196,8 @@
   flex-direction: column;
   max-width: 334px;
   min-height: 563px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card {
@@ -337,8 +339,8 @@
 .footer {
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
-  margin-bottom: 120px;
-  margin-top: 205px;
+  margin-bottom: 110px;
+  margin-top: 180px;
 }
 
 .footer__address {

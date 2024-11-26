@@ -339,7 +339,7 @@
 .footer {
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
-  margin-bottom: 110px;
+  margin-bottom: 115px;
   margin-top: 180px;
 }
 

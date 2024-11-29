@@ -79,7 +79,7 @@
   width: 1100px;
   min-height: 757px;
   max-width: 1100px;
-  padding: 165px 50px 237px 50px;
+  padding: 165px 50px 0px 50px;
 }
 
 .cover__title {
@@ -87,32 +87,24 @@
   z-index: 1;
   color: #fff;
   letter-spacing: 0.3em;
+  font-size: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .aligned-text {
   display: block;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 100px;
-  text-transform: uppercase;
 }
 
 .aligned-text_center {
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 100px;
   line-height: 136px;
-  text-transform: uppercase;
 }
 
 .aligned-text_right {
   text-align: right;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 100px;
   line-height: 103px;
-  text-transform: uppercase;
 }
 
 .letter-spacing-extended {
@@ -132,22 +124,19 @@
 
 .cover__description {
   display: flex;
-  line-height: 28px;
+  justify-content: space-between;
   align-items: center;
+  line-height: 28px;
   color: #fff;
-  padding: 173px 27px 0px 26px;
+  padding: 134px 0 0 27px;
   text-align: left;
-  gap: 78px;
+  word-spacing: 18.5px;
 }
 
 .cover__description-text {
-  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 19px;
-  white-space: nowrap;
-  line-height: 28px;
   z-index: 1;
 }
 
@@ -250,17 +239,17 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  z-index: -1;
+  z-index: 0;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  z-index: -1;
+  z-index: 0;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  z-index: -1;
+  z-index: 0;
 }
 
 /* Конец второй секции */
@@ -372,7 +361,7 @@
 }
 
 .footer__social-list-item {
-  max-width: 48px;
+  width: 48px;
   max-height: 48px;
   list-style: none;
 }

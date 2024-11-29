@@ -10,7 +10,7 @@
 .header__menu {
   font-size: 18px;
   align-self: center;
-  justify-self: end;
+  justify-self: baseline;
 }
 
 .header__link-list {
@@ -47,18 +47,20 @@
 
 .address {
   font-size: 18px;
-  align-self: center;
   padding-left: 151px;
   text-underline-offset: 5px;
   line-height: 24.3px;
-}
-
-.header__address {
   font-weight: normal;
   font-style: normal;
 }
 
-.header_mail {
+.header__address {
+  align-self: center;
+  text-underline-offset: 5px;
+  padding-left: 151px;
+}
+
+.address__link {
   text-underline-offset: 3px;
 }
 
@@ -74,26 +76,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 165px 50px 200px 50px;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   max-width: 1100px;
+  padding: 165px 50px 237px 50px;
 }
 
 .cover__title {
   position: relative;
-  display: grid;
   z-index: 1;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.35fr 1.19fr 1fr;
   color: #fff;
-  letter-spacing: 1.3em;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
 }
@@ -103,9 +102,8 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 100px;
-  line-height: 1;
+  line-height: 136px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
 }
 
 .aligned-text_right {
@@ -113,16 +111,16 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 100px;
-  line-height: 1;
+  line-height: 103px;
   text-transform: uppercase;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.586em;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 .overlay {
@@ -137,9 +135,9 @@
   line-height: 28px;
   align-items: center;
   color: #fff;
-  padding: 136px 27px 0px 26px;
+  padding: 173px 27px 0px 26px;
   text-align: left;
-  gap: 79px;
+  gap: 78px;
 }
 
 .cover__description-text {
@@ -173,7 +171,7 @@
 /* Начало втрой секции */
 
 .lots {
-  margin: 179px 24px 139px 24px;
+  margin: 178px 24px 137px 24px;
 }
 
 .lots__heading {
@@ -193,7 +191,6 @@
 }
 
 .lots__card-list-item {
-  flex-direction: column;
   max-width: 334px;
   min-height: 563px;
   background-position: center;
@@ -201,11 +198,14 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px 48px 40px;
+  height: 100%;
   position: relative;
-  min-width: 334px;
+  max-width: 334px;
   min-height: 563px;
-  width: 334px;
-  height: 563px;
   background-position: center;
   background-size: cover;
 }
@@ -213,39 +213,28 @@
 .card-link {
   all: unset;
   position: relative;
+  cursor: pointer;
 }
 
 .card__title {
-  position: relative;
   z-index: 1;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 22px;
-  padding: 51px 40px 0px 40px;
-  text-decoration: underline;
   text-transform: uppercase;
+  line-height: 26.4px;
+  text-decoration: underline solid #fff 1px;
+  text-underline-offset: 3px;
 }
 
 .card__text {
-  position: relative;
+  align-content: end;
+  height: 100%;
   z-index: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-}
-
-.card__text-film {
-  padding: 242px 40px 48px 40px;
-}
-
-.card__text-book {
-  padding: 0px 40px 48px 40px;
-}
-
-.card__text-picture {
-  margin: 96px 40px 48px 40px;
-  padding-bottom: 48px;
 }
 
 .lots__look-more-link {
@@ -255,7 +244,8 @@
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
+  text-decoration: underline solid #000 1px;
 }
 
 .card_type_film {
@@ -311,8 +301,8 @@
 }
 
 .about__title {
-  margin-top: 173px;
-  margin-bottom: 101px;
+  margin-top: 174px;
+  margin-bottom: 102px;
   grid-column: 2/2;
   grid-row: 1/1;
   font-family: "Raleway", sans-serif;
@@ -325,8 +315,15 @@
   grid-column: 2/2;
   grid-row: 1/1;
   font-family: "Raleway", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
+}
+
+.about__text-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 22.5px;
 }
 
 .about__text-indent {
@@ -341,7 +338,7 @@
   display: grid;
   grid-template-columns: 0.81fr 1fr 0.81fr;
   margin-bottom: 88px;
-  margin-top: 179px;
+  margin-top: 181px;
 }
 
 .footer__address {
